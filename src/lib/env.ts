@@ -9,6 +9,8 @@ export const env = createEnv({
         AWS_SECRET_ACCESS_KEY: z.string().min(1),
         AWS_REGION: z.string().min(1),
         AWS_BUCKET_NAME: z.string().min(1),
+        CHATTERBOX_API_URL: z.string().min(1),
+        CHATTERBOX_API_KEY: z.string().min(1),
     },
     experimental__runtimeEnv: {},
     skipValidation: !!process.env.SKIP_ENV_VALIDATION,
